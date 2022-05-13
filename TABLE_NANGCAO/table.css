@@ -1,0 +1,52 @@
+#black{
+    background-color: black;
+}
+#table{
+    color: #fff;
+    background-color:rgb(244, 129, 175);
+    font-size: 60px;
+    text-align: center;
+    border-spacing: 0px;
+    
+}
+#while{
+    background-color: #fff;
+}
+td{
+    width: 60px;
+    height: 60px;
+   
+}
+td:hover
+{
+    background-color: chartreuse;
+}
+div{
+    text-align: center;
+}
+#table_2{
+    border: solid;
+}
+#header{
+    text-align: center;
+}
+#td-date{
+    width: 80px;
+    height: 30px;
+    border:solid;
+    text-align: center;
+}
+.text-1{
+    color: red;
+}
+.text-n{
+    color: rgb(60, 0, 255);
+}
+.color{
+    background-color: rgb(85, 210, 216);
+    color: #fff;
+}
+#header{
+    color:blue;
+    font-size: 40px;
+}
