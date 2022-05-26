@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./chuyendoitien.css">
+    <title>ChuyenTienTe</title>
+   
+</head>
+<body>
+    <h1> HỆ THỐNG CHUYỂN ĐỔI TIỀN TỆ</h1>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <th> <input type="text" id="money"> </th>
+            <th> 
+                <select name="name" id="from">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select> 
+            </th>
+            <th>
+                <select name="name" id="to">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select> 
+            </th>
+            <th>
+                <button onclick="convert()">Covert</button>
+            </th>
+            
+        </tr>
+    </table>
+</body>
+<script src="./chuyendoitien.js"></script>
+</html>
