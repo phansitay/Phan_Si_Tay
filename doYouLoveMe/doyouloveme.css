@@ -1,0 +1,23 @@
+h2{
+    position: relative;
+    left: 300px;
+    top: 300px;
+    width: 300px;
+}
+button{
+    position: relative;
+    left: 350px;
+    top: 310px;
+}
+body{
+    height: 100%;
+    background-color: azure;
+}
+#btnYes{
+    background-color: rgb(230, 133, 153);
+    color: #fff;
+}
+#btnNo{
+    background-color: rgb(195, 24, 207);
+    color: #fff;
+}
