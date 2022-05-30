@@ -1,0 +1,12 @@
+h1{
+    background-color: aqua;
+    color: red;
+    text-align: center;
+}
+div{
+    padding-left: 500px;
+    background-color: lightgreen;
+}
+body{
+    background-color: tomato;
+}
