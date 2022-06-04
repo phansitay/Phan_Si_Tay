@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+    
+</body>
+<script>
+        var n;
+        var status = 1;
+        var num = 3;
+        n=prompt("Nhập số lượng sô nguyên tố");
+        if (n >= 1)
+        {
+            alert(n+" Số nguyên tố đầu tiên là:");
+            alert(2);
+        }
+        for ( var i = 2 ; i <=n ;  )
+        {
+            for ( var j = 2 ; j <= Math.sqrt(num) ; j++ )
+            {
+                if ( num%j == 0 )
+                {
+                    status = 0;
+                    break;
+                }
+            }
+            if ( status != 0 )
+            {
+                alert(num);
+                i++;
+            }
+            status = 1;
+            num++;
+        }
+</script>
+</html>
