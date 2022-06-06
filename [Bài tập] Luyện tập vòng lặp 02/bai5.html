@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bai5.css">
+    <title>Bai5</title>
+</head>
+<body>
+    <div id="container">
+        <div id="txt">
+            Nhập số tiền bạn gửi vào ngân hàng :
+            <br>
+            Nhập số tháng cho vay :
+            <br>
+            Nhập số % lãi xuất hàng tháng :
+            <br>
+    
+        </div>
+        <div id="text">
+            <input type="text" id="tien">
+            <br>    
+            <input type="text" id="thang">
+            <br>    
+            <input type="text" id="lai">
+            <br>
+            
+        </div>
+        <button id="btn" onclick="tinhLai()">Tính</button>  
+    </div>
+</body>
+<script>
+    function tinhLai()
+    {
+        a=document.getElementById("tien").value;
+        b=document.getElementById("thang").value;
+        c=document.getElementById("lai").value;
+
+        var s;
+        s=a*Math.pow((1+(c/100)),b);
+        document.writeln("Với số tiền là "+a+" với lãi xuất là "+c+" % thì sau "+b+" tháng thì nhận được số tiền là : "+s);
+    }
+</script>
+</html>

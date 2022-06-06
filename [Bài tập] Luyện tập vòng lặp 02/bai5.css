@@ -1,0 +1,17 @@
+#txt{
+    float: left;
+    margin-right: 40px;
+}
+#btn{
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 100px;
+    height: 50px;
+}
+#container{
+    margin-top: 100px;
+    margin-left: 500px;
+}
+body{
+    background-color: beige;
+}
