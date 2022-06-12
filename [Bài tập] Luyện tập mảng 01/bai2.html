@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var n=10;
+    var arr=[n];
+    var max=arr[0];
+    var vt;
+    for(var i=0;i<n;i++)
+    {
+        arr[i]= Math.floor(Math.random()*50);
+    }
+    for(var i=0;i<n;i++)
+    {
+       document.writeln(arr[i]);
+    }
+    
+    for(var i=0;i<n;i++)
+    {
+       if(arr[i]>max)
+       {
+           max=arr[i];
+           vt=i+1;
+       }
+    }
+    document.writeln("<br>"+"Phần tử có giá trị lớn nhất trong mảng là : "+max);
+    document.writeln("<br>"+"Vị trí của phần tử có giá trị lớn nhất trong mảng là : "+vt);
+
+
+</script>
+</html>

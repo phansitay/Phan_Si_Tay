@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai8</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var n;
+    n=prompt("Nhập số phần tử của mảng");
+    var arr=new Array(n);
+    var dem=0;
+    for(let i=0;i<n;i++) {
+        arr[i]= Math.floor(Math.random() * 10);
+    }
+    for(let i=0;i<n;i++){
+       document.writeln(arr[i]);
+    }
+
+    for(var i=0;i<n-1;i++){
+        for(var j=i+1;j<n;j++)
+        {
+            if(arr[i]<arr[j])
+            {
+                var temp=arr[j];
+                arr[j]=arr[i];
+                arr[i]=temp;
+            }
+        }
+    }
+    document.writeln("mảng sau khi được sắp xếp giảm dần là : ");
+
+    for(var i=0;i<n;i++)
+    {
+        document.writeln(arr[i]);
+    }
+</script>
+</html>
