@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1</title>
+</head>
+<body>
+    Nhập số a : 
+    <input id="soa" type="text">
+    <button onclick="binhPhuong()">Bình phương</button>
+    <p id="kq"></p>
+    
+</body>
+<script>
+    function kqtv(a)
+    {
+        return a*a;
+    }
+    function binhPhuong()
+    {
+        var biena=parseInt(document.getElementById("soa").value);
+        if(isNaN(biena))
+        {
+            alert("Số bạn nhập không hợp lệ mời bạn nhập lại");
+        }
+        else
+        {
+            document.getElementById("kq").innerText=kqtv(biena);
+        }
+    }
+</script>
+</html>

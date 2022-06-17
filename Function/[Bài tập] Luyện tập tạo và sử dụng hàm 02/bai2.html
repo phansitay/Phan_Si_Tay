@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bai2.css">
+    <title>Bai2</title>
+</head>
+<body>
+    Nhập bán kính của hình tròn : 
+    <input type="text" id="r">
+    <button onclick="result()">result</button>
+    <br>
+    <table>
+        <tr>
+            <td>Chu vi của hình tròn </td>
+            <td><p id="cv"></p></td>
+        </tr>
+        <tr>
+            <td>Diện tích của hình tròn</td>
+            <td><p id="dt"></p></td>
+        </tr>
+    </table>
+</body>
+<script>
+    var pi=3.14;
+    function chuVi(r)
+    {     
+        return pi*r*2;
+    }
+    function dienTich(r)
+    {
+        return pi*r*r;
+    }
+    function result()
+    {
+        var bk=parseFloat(document.getElementById("r").value);
+        if(isNaN(bk)||bk<0)
+        {
+            alert("Bán kình bạn nhập không hợp lệ!")
+        }
+        else
+        {
+            document.getElementById("cv").innerText=chuVi(bk);
+            document.getElementById("dt").innerText=dienTich(bk);
+        }      
+    }
+
+</script>
+</html>

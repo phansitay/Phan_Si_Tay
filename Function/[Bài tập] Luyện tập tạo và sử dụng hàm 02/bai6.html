@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bai6.css">
+    <title>Bai6</title>
+</head>
+<body>
+    Nhập vào số a: 
+    <input type="text" id="a">
+    <button onclick="snd()">Result</button>
+    <table>
+        <tr>
+            <td>Số a có phải số nguyên dương hay không ?</td>
+            <td><p id="result"></p></td>
+        </tr>
+    </table>
+</body>
+<script>
+    function snd()
+    {
+        var a=parseInt(document.getElementById("a").value);
+        if(isNaN(a))
+        {
+            alert("Bạn nhập không hợp lệ mời bạn nhập lại ");
+        }
+        else{
+            if(a<0)
+            {
+                document.getElementById("result").innerText="False";
+            }
+            else
+            {
+                document.getElementById("result").innerText="True";
+            }
+        }
+    }
+</script>
+</html>

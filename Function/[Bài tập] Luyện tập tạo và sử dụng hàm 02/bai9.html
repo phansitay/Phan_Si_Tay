@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai9</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function timKiem()
+    {
+        var n;
+        var dem=0;
+        n=prompt("Nhập số phần tử của mảng");
+        var arr=new Array(n);
+        var tb=0;
+        for(let i=0;i<n;i++) {
+            arr[i]=prompt("Nhập phần tử thứ "+i+" là : ");
+        }
+        var a;
+        a=prompt("Nhập phần tử cần tìm trong mảng");
+        for(let i=0;i<n;i++){
+            if(arr[i]==a)
+            {
+                dem++;
+            }
+        }
+        if(dem==0)
+        {
+            alert("Không tìm thấy phần tử trong mảng");
+        }
+        else
+        {
+            alert("Tìm thấy "+dem+ " lan phan tu can tim");
+        }
+    }
+
+</script>
+</html>

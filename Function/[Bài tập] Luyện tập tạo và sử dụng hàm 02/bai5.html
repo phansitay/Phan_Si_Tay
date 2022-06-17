@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bai5.css">
+    <title>Bai5</title>
+</head>
+<body>
+    <div class="d1">
+        <table>
+            <tr><td>Nhập vào số a: </td></tr>
+            <tr><td>Nhập vào số b: </td> </tr>
+            <tr><td>Nhập vào số c: </td></tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr><td><input type="text" id="a"></td></tr>
+            <tr><td><input type="text" id="b"></td> </tr>
+            <tr><td><input type="text" id="c"></td></tr>
+        </table>
+    </div>
+    <button onclick="timMin()">Result</button>
+</body>
+<script>
+    function timMin()
+    {
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        var c=parseInt(document.getElementById("c").value);
+        if(isNaN(a)||isNaN(b)||isNaN(c))
+        {
+            alert("Bạn nhập không hợp lệ mời bạn nhập lại");
+        }
+        else
+        {
+            if(a<b){
+            if(a<c){
+                document.writeln("Số nhỏ nhất trong 3 số "+a+" , "+b+" , "+c+" là : "+a);
+            }
+            else{
+                document.writeln("Số nhỏ nhất trong 3 số "+a+" , "+b+" , "+c+" là : "+c);
+            }
+        }
+        else
+        {
+            if(b<c){
+                document.writeln("Số nhỏ nhất trong 3 số "+a+" , "+b+" , "+c+" là : "+b);
+            }
+            else{
+                document.writeln("Số nhỏ nhất trong 3 số "+a+" , "+b+" , "+c+" là : "+c);
+            }
+        }
+        }
+        
+    }
+</script>
+</html>

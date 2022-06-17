@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai5</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var arrA=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe","Regulus"];
+    var arrB =["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"];
+    var name="";
+    var dem=0;
+    name=prompt("Nhập vào tên ngôi sao mà bạn cần tìm : ");
+    function search()
+    {
+        for(var i=0;i<arrA.length;i++)
+        {
+            if(name==arrA[i])
+            {
+                document.writeln("Ngôi sao "+name+"thuộc chồm sao "+arrB[i]);
+                break;
+            }
+            else
+            {
+                dem++;
+            }
+        }
+        if(dem==7)
+        {
+            document.writeln("Không tìm thấy ngôi sao cần tìm ");
+        }
+    }
+    search();
+</script>
+</html>
