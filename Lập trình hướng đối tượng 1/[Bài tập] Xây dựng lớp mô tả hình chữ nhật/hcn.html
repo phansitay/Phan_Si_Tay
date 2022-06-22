@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HinhChuNhat</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="800" height="600" style="border:1px solid grey"></canvas>
+</body>
+<script>
+    class Rectangle
+    {
+        constructor(){
+            var width,height;         
+            this.width=width=parseInt(prompt("Mời bạn nhập chiều dài của hình chữ nhật : "));
+            this.height=height=parseInt(prompt("Mời bạn nhập chiều rộng của hình chữ nhật : "));
+        }
+        perimeter()
+        {
+            var perimeter;
+            perimeter = (this.width+this.height)*2;
+            alert("Chu vi của hình chữ nhật là :"+perimeter);
+        }
+        area()
+        {
+            var area;
+            area=this.width*this.height;
+            alert("Diện tích của hình chữ nhật là : "+area);
+        }
+        point()
+        {
+            // var c = document.getElementById("myCanvas");
+            // var ctx = c.getContext("2d");
+            // ctx.beginPath();
+            // ctx.moveTo(0, 0);
+            // ctx.lineTo(0,this.height);
+            // ctx.lineTo(this.width,this.height);
+            // ctx.lineTo(this.width, 0);
+            // ctx.lineTo(0, 0);
+            // ctx.stroke();
+
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            var grd = ctx.createLinearGradient(0,0,300,0);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"white");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,this.width,this.height);
+        }
+    }
+
+    var r=new Rectangle()
+    r.perimeter();
+    r.area();
+    r.point();
+
+   
+
+</script>
+</html>
